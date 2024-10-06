@@ -28,7 +28,8 @@ export const HeroProfile = ({ ...props }: HeroProfileprops) => {
             }}
           />
           <p className="hero-profile-tagline">
-            What I excel at is creating software, websites and applications.
+            "I excel at creating user-centric software, websites, and apps with
+            JavaScript, React.js, and Node.js."
           </p>
           {/* <a
             href="https://limey.io/andrewbaisden"
