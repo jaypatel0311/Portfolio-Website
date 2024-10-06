@@ -1,0 +1,68 @@
+@import url(../../App.css);
+
+/* Carousel content card */
+.projects-carousel-slide-content {
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-carousel-slide-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.projects-carousel-slide-content h1 {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* List styles */
+.projects-carousel-slide-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.projects-carousel-slide-content ul li {
+  padding: 5px;
+  font-size: 1.2rem;
+  text-align: left;
+  justify-content: space-around;
+}
+
+/* Iconography and style for emphasis */
+.projects-carousel-slide-content ul li p {
+  line-height: 1.6;
+  color: #e0fbfc;
+}
+
+.projects-carousel-slide-content ul li p b {
+  color: #000000;
+  font-weight: bold;
+}
+
+.projects-carousel-slide-content ul li ul {
+  padding-left: 20px;
+}
+
+.projects-carousel-slide-content ul li ul li {
+  list-style-type: disc;
+  color: #ffffff;
+}
+
+.projects-carousel-slide-content ul li ul li::marker {
+  color: #000000;
+}
+
+/* Icons for better visual structure */
+.projects-carousel-slide-content ul li p:before {
+  content: "\2713"; /* Use font-awesome checkmarks or another icon pack */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #000000;
+  margin-right: 8px;
+}

@@ -11,12 +11,14 @@ import ContactText from "./stories/ContactText/ContactText";
 import FooterText from "./stories/FooterText/FooterText";
 
 import { useTheme } from "../src/context/ThemeContext";
+import ProjectCarousel from "./stories/ProjectCarousel/ProjectCarousel";
 
 const App = () => {
   const { activeTheme } = useTheme();
 
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
+  const projectRef = useRef(null);
   const scoialMediaRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
@@ -71,10 +73,10 @@ const App = () => {
                 </div>
               </section>
             </div>
-            <div ref={scoialMediaRef}>
+            <div ref={projectRef}>
               <section className="header-section">
                 <a
-                  href="/#socialmedia"
+                  href="/#project"
                   rel="noopener noreferrer"
                   className={
                     activeTheme === "light"
@@ -82,17 +84,17 @@ const App = () => {
                       : "header-title-dark"
                   }
                 >
-                  Social Media
+                  Projects
                 </a>
               </section>
               <section
-                className={`socialmedia-section ${
+                className={`Projects-section ${
                   activeTheme === "light"
                     ? "section-border-light-theme"
                     : "section-border-dark-theme"
                 }`}
               >
-                <SocialMediaCarousel />
+                <ProjectCarousel />
               </section>
             </div>
             <div ref={skillsRef}>
@@ -119,6 +121,31 @@ const App = () => {
                 <SkillGroupIcons />
               </section>
             </div>
+            <div ref={scoialMediaRef}>
+              <section className="header-section">
+                <a
+                  href="/#socialmedia"
+                  rel="noopener noreferrer"
+                  className={
+                    activeTheme === "light"
+                      ? "header-title-light"
+                      : "header-title-dark"
+                  }
+                >
+                  Social Media
+                </a>
+              </section>
+              <section
+                className={`socialmedia-section ${
+                  activeTheme === "light"
+                    ? "section-border-light-theme"
+                    : "section-border-dark-theme"
+                }`}
+              >
+                <SocialMediaCarousel />
+              </section>
+            </div>
+
             <div ref={contactRef}>
               <section className="header-section">
                 <a
