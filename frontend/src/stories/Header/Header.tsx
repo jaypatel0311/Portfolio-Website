@@ -9,9 +9,11 @@ interface Headerprops {
   scoialMediaRef: any;
   skillsRef: any;
   contactRef: any;
+  activeTheme: any;
 }
 
 export const Header = ({
+  activeTheme,
   aboutRef,
   scoialMediaRef,
   skillsRef,
@@ -33,15 +35,15 @@ export const Header = ({
       <div className="header-desktop">
         <section>
           <div>
-            <a
+            {/* <a
               href="#home"
               rel="noopener noreferrer"
               onClick={() => {
                 handleScroll(homeRef.current);
               }}
             >
-              {/* <img src={Logo} alt="Jay Patel Logo" /> */}
-            </a>
+              <img src={Logo} alt="Jay Patel Logo" />
+            </a> */}
           </div>
           <div className="navigation">
             <nav>
@@ -97,7 +99,12 @@ export const Header = ({
           </div>
         </section>
       </div>
-      <div className="header-mobile-no-menu">
+      <div
+        className={` ${
+          activeTheme === "light" ? "header-title-light " : "header-title-dark"
+        } header-mobile-no-menu`}
+        style={{ background: activeTheme === "light" ? "#22aae7" : "" }}
+      >
         <div className="logo-theme-toggle">
           <a
             href="#home"
@@ -106,7 +113,31 @@ export const Header = ({
               handleScroll(homeRef.current);
             }}
           >
-            <img src={Logo} alt="Jay Patel Logo" />
+            <svg
+              stroke="#ffffff"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M80 212v236a16 16 0 0 0 16 16h96V328a24 24 0 0 1 24-24h80a24 24 0 0 1 24 24v136h96a16 16 0 0 0 16-16V212"
+              ></path>
+              <path
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M480 256 266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256m368-77V64h-48v69"
+              ></path>
+            </svg>
+            {/* <img src={Logo} alt="Jay Patel Logo" /> */}
           </a>
         </div>
         <div>
