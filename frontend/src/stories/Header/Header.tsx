@@ -1,5 +1,3 @@
-import React from "react";
-import Logo from "../../img/profile-picture.jpeg";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import "./Header.css";
 
@@ -103,7 +101,7 @@ export const Header = ({
         className={` ${
           activeTheme === "light" ? "header-title-light " : "header-title-dark"
         } header-mobile-no-menu`}
-        style={{ background: activeTheme === "light" ? "#22aae7" : "" }}
+        style={{ background: activeTheme === "light" ? "#22aae7" : "#000000" }}
       >
         <div className="logo-theme-toggle">
           <a
