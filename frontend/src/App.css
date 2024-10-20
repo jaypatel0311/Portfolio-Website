@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 *,
 *::before,
@@ -7,9 +7,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Apply smooth scrolling to the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* For Chrome, Safari, Edge, and Opera */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #3c3c3c; /* Background of the track (empty area of scrollbar) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker handle on hover */
+}
 
 :root {
-  --main-font-family: 'Quicksand', sans-serif;
+  --main-font-family: "Quicksand", sans-serif;
   --main-font-color: #2f2f3a;
   --main-font-size: 16px;
   --brand-color-blue-main: #0384c8;
@@ -30,13 +52,13 @@ html {
 }
 
 body,
-body[data-theme='light'] {
+body[data-theme="light"] {
   --color-text-primary: var(--main-font-color);
   --color-bg-primary: var(--brand-color-grey);
   --color-bg-toggle: var(--brand-color-blue);
 }
 
-body[data-theme='dark'] {
+body[data-theme="dark"] {
   --color-text-primary: var(--brand-color-white);
   --color-bg-primary: var(--main-font-color);
   --color-bg-toggle: var(--main-font-color);
