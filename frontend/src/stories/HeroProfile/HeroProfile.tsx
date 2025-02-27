@@ -28,8 +28,7 @@ export const HeroProfile = ({ ...props }: HeroProfileprops) => {
             }}
           />
           <p className="hero-profile-tagline">
-            "I excel at creating user-centric software, websites, and apps with
-            JavaScript, React.js, and Node.js."
+            "I excel at designing and developing user-centric software, websites, and applications using modern technologies and frameworks."
           </p>
           {/* <a
             href="https://limey.io/andrewbaisden"
