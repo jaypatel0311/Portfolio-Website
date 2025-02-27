@@ -4,6 +4,14 @@
   color: #ffffff;
 }
 
+.hover-img {
+  transition: transform 0.3s ease-in-out;
+}
+.hover-img:hover {
+  transform: scale(1.1);
+}
+
+
 .hero-profile {
   display: flex;
   flex-flow: column nowrap;
