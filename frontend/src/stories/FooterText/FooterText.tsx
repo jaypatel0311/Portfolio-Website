@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./FooterText.css";
-import firstFormationsLogo from "../../img/1stFormations_Member_Logo_Dark Background.png";
 
 import { useTheme } from "../../context/ThemeContext";
 

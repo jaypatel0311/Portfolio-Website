@@ -8,7 +8,7 @@ export const AboutProfileText = ({ ...props }: AboutProfileTextProps) => {
     <>
       <article className="about-profile-text">
         <p>Hey there you super awesome person!</p>
-        <p>I’m Jay Patel, a passionate web developer based in Edmonton, AB.</p>
+        <p>I’m Jay Patel, a passionate web developer based in Canada</p>
         <p>
           I work as a Software Developer using the JavaScript, React.js, and
           Node.js. With a solid background in full-stack development, I excel at
