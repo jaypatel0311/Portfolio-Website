@@ -17,6 +17,8 @@ export const ProjectCarousel = ({ ...props }: SocialMediaCarouselProps) => {
         showArrows={false}
         autoPlay={true}
         infiniteLoop={true}
+        transitionTime={1000}
+        interval={8000}
         swipeable={true}
         emulateTouch={true}
         showStatus={false}
@@ -24,7 +26,51 @@ export const ProjectCarousel = ({ ...props }: SocialMediaCarouselProps) => {
         thumbWidth={100}
         width={"100%"}
       >
-        {/* Carousel Slide 1 */}
+{/* Carousel Slide 1 */}
+<div
+          className={
+            activeTheme === "light"
+              ? "social-media-carousel-slide-light-theme"
+              : "social-media-carousel-slide-dark-theme"
+          }
+          style={{ padding: "5px", height: "auto" }}
+        >
+          <div className="projects-carousel-slide-content">
+            <h1>WebBluprints - Digital Template Marketplace</h1>
+
+            <ul>
+              <li>
+                <p>
+                  <b>Description :</b> Built a full-stack web platform where users can explore, filter, preview, and download website templates. The application supports user authentication, dashboard management, and secure access to digital assets. Stripe will be integrated for handling premium template purchases.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Technologies : </b> React.js, NestJS, Mongoose,
+                  MaterialUI, JWT, Stripe
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Key Contributions :</b>
+                  <ul>
+                    <li>
+                    Developed secure user authentication using JWT in both frontend and backend, enabling personalized access and session management.
+                    </li>
+                    <li>
+                    Designed and implemented dynamic template search and filters (e.g., category, tags, tech stack) for enhanced user experience.
+                    </li>
+                    <li>
+                    Integrated Stripe for secure payment processing, enabling monetization of premium templates.
+                    </li>
+                  </ul>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Carousel Slide 2 */}
         <div
           className={
             activeTheme === "light"
@@ -73,9 +119,9 @@ export const ProjectCarousel = ({ ...props }: SocialMediaCarouselProps) => {
             </ul>
           </div>
         </div>
-        {/* Carousel Slide 1 */}
+        
 
-        {/* Carousel Slide 2 */}
+        {/* Carousel Slide 3 */}
         <div
           className={
             activeTheme === "light"
@@ -124,9 +170,8 @@ export const ProjectCarousel = ({ ...props }: SocialMediaCarouselProps) => {
             </ul>
           </div>
         </div>
-        {/* Carousel Slide 2 */}
 
-        {/* Carousel Slide 3 */}
+        {/* Carousel Slide 4 */}
         <div
           className={
             activeTheme === "light"
@@ -175,9 +220,8 @@ export const ProjectCarousel = ({ ...props }: SocialMediaCarouselProps) => {
             </ul>
           </div>
         </div>
-        {/* Carousel Slide 3 */}
 
-        {/* Carousel Slide 3 */}
+        {/* Carousel Slide 5 */}
         <div
           className={
             activeTheme === "light"
@@ -225,7 +269,6 @@ export const ProjectCarousel = ({ ...props }: SocialMediaCarouselProps) => {
             </ul>
           </div>
         </div>
-        {/* Carousel Slide 3 */}
       </Carousel>
     </>
   );
