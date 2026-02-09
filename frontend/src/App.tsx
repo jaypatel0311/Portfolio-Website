@@ -33,6 +33,7 @@ const App = () => {
               <Header
                 homeRef={homeRef}
                 aboutRef={aboutRef}
+                projectRef={projectRef}
                 scoialMediaRef={scoialMediaRef}
                 skillsRef={skillsRef}
                 contactRef={contactRef}

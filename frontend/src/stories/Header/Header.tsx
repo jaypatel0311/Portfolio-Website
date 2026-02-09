@@ -7,6 +7,8 @@ interface Headerprops {
   scoialMediaRef: any;
   skillsRef: any;
   contactRef: any;
+  projectRef: any;
+
   activeTheme: any;
 }
 
@@ -15,6 +17,7 @@ export const Header = ({
   aboutRef,
   scoialMediaRef,
   skillsRef,
+  projectRef,
   contactRef,
   homeRef,
   ...props
@@ -72,6 +75,14 @@ export const Header = ({
               >
                 Social Media
               </a>
+              <a
+                href="#projects"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  handleScroll(projectRef.current);
+                }}
+              >
+Projects              </a>
               <a
                 href="#skills"
                 rel="noopener noreferrer"
